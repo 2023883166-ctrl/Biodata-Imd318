@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="music-player">
+  <audio id="bg-music" src="audio/pirate of carribean song.mp3"></audio>
+  <button onclick="toggleMusic()">Music 🎵</button>
+</div>
+
+<script>
+  function toggleMusic() {
+    const music = document.getElementById("bg-music");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="family.html">Family</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+</nav>
+
+<div class="profile-container">
+  <img src="images/profile.jpg" alt="My Photo" class="profile-img">
+</div>
+
+<section>
+  <h1>Welcome to Aqil's Website</h1><br>
+  <p>Welcome to my personal website. This platform is created to share more about who I am, my background, and my journey. Here, you can explore different sections that highlight my personal details, family, education, experiences, and gallery. I hope this website gives you a clear overview of my life and the path I am working towards.</p>
+</section>
+
+<footer class="site-footer">
+  <p>© 2026 | Created by <span>Khairul Aqil</span></p>
+  <center><iframe src="https://free.timeanddate.com/clock/ia8f1cw2/n122/fn6/fs16/fc9ff/tc000/ftbi/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4" frameborder="0" width="216" height="59"></iframe></center>
+</footer>
+
+
+</body>
+</html>
